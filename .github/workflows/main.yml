@@ -21,4 +21,4 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            rsync -av --delete --exclude=".env" --exclude="storage/" -e "ssh -o StrictHostKeyChecking=no" ./ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/home/pav/stacks/mysite/html/
+            rsync -av --delete --exclude=".env" --exclude="storage/" -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" ./ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:/home/pav/stacks/mysite/html/
