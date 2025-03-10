@@ -20,5 +20,5 @@ jobs:
           echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.SERVER_HOST }} >> ~/.ssh/known_hosts
-          rsync -av --delete --exclude=".env" --exclude="uploads/" ./ ${{ vars.SERVER_USER }}@${{ vars.SERVER_HOST }}:/home/pav/stacks/mysite/html/
+          rsync -av --delete --exclude="uploads/" --exclude=".git/" --exclude=".github/" ./ ${{ vars.SERVER_USER }}@${{ vars.SERVER_HOST }}:/home/pav/stacks/mysite/html/
           rm -f ~/.ssh/id_rsa
