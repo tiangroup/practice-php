@@ -126,7 +126,7 @@
     <img loading="lazy" src="img/webp/person_4_md.webp" width="80" height="80" class="rounded-circle mb-4 shadow-sm mt-2 mt-xxl-4 soh" alt="Another image of Jane Doe">
   </div>
   <h1 class="fw-lighter text-black">
-    <strong>Welcome to my design universe!!!!!!!</strong>
+    <strong>Welcome to my design universe!</strong>
     I'm Jane, a Stockholm-based digital product designer with a love for crafting beautiful interfaces.</h1>
   <p class="lead py-4">
     Welcome to this fictional sample content! It is just here to be replaced by your own fancy super content.</p>
